@@ -1,0 +1,23 @@
+10 pts
+
+Summary:
+
+- The summary is sufficient and with good quality.
+
+
+\LaTeX:
+
+- When using tables, try to keep the \hline inline with the \\ to save row
+  space.
+
+- When writing \LaTeX, try to keep every line of text within 80 characters or
+  100 at the most, then continue in a new line, \LaTeX will continue if you
+  break lines.
+
+- The usage of tables is incomplete. Usually tables have a caption that
+  describes the content of the table.
+ 
+
+- Dr. Rivas
+
+
