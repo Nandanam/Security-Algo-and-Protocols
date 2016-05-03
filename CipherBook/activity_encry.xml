@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_deep_teal_500">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enter Key:"
+        android:id="@+id/textView"
+        android:textColor="@android:color/background_light"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="43dp"
+        android:textStyle="normal|bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/keytxt"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView"
+        android:background="@color/switch_thumb_disabled_material_dark"
+        android:textColor="@android:color/background_light"
+        android:hint="Enter key"
+        android:maxLength="16"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enter Text:"
+        android:id="@+id/textView2"
+        android:layout_marginTop="47dp"
+        android:textColor="@android:color/background_light"
+        android:layout_below="@+id/keytxt"
+        android:layout_alignParentStart="true"
+        android:textStyle="normal|bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/paratxt"
+        android:maxLength="16"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+        android:hint="Enter the text to be encrypted"
+        android:textColor="@android:color/background_light"
+        android:background="@color/switch_thumb_disabled_material_dark"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encrypt and Save"
+        android:id="@+id/buttonec"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@color/abc_input_method_navigation_guard"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/paratxt"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/buttonexi"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/primary_dark_material_dark"
+        android:textStyle="normal|bold"
+        android:background="@android:color/holo_green_dark" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Decryption"
+        android:id="@+id/buttonde"
+        android:layout_alignTop="@+id/buttonexi"
+        android:layout_alignEnd="@+id/paratxt"
+        android:textColor="@color/bright_foreground_material_light"
+        android:textStyle="normal|bold"
+        android:background="@android:color/holo_purple" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView3"
+        android:background="@color/abc_search_url_text_normal"
+        android:hint="Cipher text"
+        android:textColor="@color/abc_search_url_text_selected"
+        android:layout_alignEnd="@+id/buttonclear"
+        android:layout_below="@+id/buttonec"
+        android:layout_toEndOf="@+id/buttonexi" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="CipherBook"
+        android:id="@+id/textView4"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="normal|bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:background="@drawable/lock"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/paratxt"
+        android:layout_below="@+id/textView3"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:id="@+id/buttonclear"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/primary_dark_material_light"
+        android:textColor="@color/abc_search_url_text_pressed"
+        android:textStyle="normal|bold" />
+</RelativeLayout>

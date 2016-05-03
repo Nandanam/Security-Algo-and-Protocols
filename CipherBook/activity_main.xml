@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/crypto"
+    tools:context="com.example.vky.aes.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="CIPHERBOOK"
+        android:id="@+id/textView1"
+        android:textColor="@android:color/primary_text_dark_nodisable"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:gravity="top|center"
+        android:capitalize="characters"
+        android:textColorHighlight="@android:color/holo_orange_light"
+        android:visibility="visible"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="@android:dimen/app_icon_size" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START"
+        android:id="@+id/button1"
+        android:background="@android:color/holo_orange_light"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="normal|bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:id="@+id/buttonabtp"
+        android:background="@color/material_grey_300"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/background_dark"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/textView1" />
+
+</RelativeLayout>
